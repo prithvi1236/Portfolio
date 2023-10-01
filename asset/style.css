@@ -1,5 +1,5 @@
 body {
-  padding: 2px;
+  padding: 5rem;
   font-size: larger;
   background-image: url("bg.jpeg");
   background-repeat: no-repeat;
@@ -36,6 +36,40 @@ h1:hover {
   margin-left: auto;
   margin-right: auto;
   border: 8px double lightseagreen;
+} 
+#name {
+  color: rgba(57, 80, 209, 0.8);
+  font-family: cursive;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.n1{
+  position: relative;
+  margin-right: 2px;
+  animation: slide-left 2s ease-in-out;
+}
+.n2{
+  position: relative;
+  animation: slide-right 2s ease-in-out;
+}
+@keyframes slide-left {
+  from {
+    left: -100%; /* Starting position, slide in from the right */
+  }
+  to {
+    left: 0%; /* Ending position, slide to the left */
+  }
+}
+
+@keyframes slide-right {
+  from {
+    right: -100%; /* Starting position, slide in from the right */
+  }
+  to {
+    right: 0%; /* Ending position, slide to the left */
+  }
 }
 #my_photo:hover {
   transform: scale(1.05); /* Slightly scale up the image on hover */
