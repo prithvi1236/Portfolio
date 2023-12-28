@@ -76,11 +76,7 @@ h1:hover {
   filter: brightness(1.1); /* Increase brightness on hover */
   opacity: 0.8; /* Reduce opacity on hover to make it shine */
 }
-#links {
-  text-align: center;
-  flex-direction: row;
-  font-size: x-large;
-}
+
 a:hover {
   background-color: yellow;
 }
@@ -134,31 +130,11 @@ table tbody tr td {
 table tbody tr:hover td {
   color: #fff; /* Change the text color on hover */
 }
-#contact {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: greenyellow; /* Set the background color for the stamp */
-  color: #fff; /* Set the text color */
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 8px; /* Rounded corners to make it look like a stamp */
-  position: relative;
-  transition: transform 0.2s, box-shadow 0.2s; /* Apply transitions for transform and box-shadow */
-}
-#contact::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 20px;
-  background-color: inherit;
-  border-bottom-left-radius: 50% 20px; /* Create the left curved edge */
-  border-bottom-right-radius: 50% 20px; /* Create the right curved edge */
-  z-index: -1; /* Place it behind the main content */
-}
-#contact:hover {
-  transform: scale(1.05); /* Scale the element on hover for the stamp effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+
+
+
+#container{
+  text-align: start;
+  margin-left: 2cm;
+  height: 3cm; width: 3cm;
 }
